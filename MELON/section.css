@@ -1,0 +1,89 @@
+section .wrap {width: 1008px; margin: 0 auto;}
+
+section .conts {overflow: hidden;}
+/* 3영역 너비 합 1008px */
+section .conts .list {
+    float: left;
+    width: 480px;
+}
+section .conts .slide {
+    float: left;
+    width: 236px;
+}
+section .conts .user {
+    float: left;
+    width: 280px;
+}
+
+.conts .list ul {overflow: hidden;}
+.conts .list ul li {
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.conts .list ul li a {
+    position: relative;
+}
+
+
+.conts .list ul li a .singer {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    z-index: 9; /* 호버컨텐츠의 z인덱스 10 */
+}
+
+.conts .list  ul li .hover_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 156px;
+    height: 156px;
+    line-height: 156px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    opacity: 0; /* 투명도  1일 경우 보임, 0일 경우 안 보임*/
+}
+.conts .list  ul li .hover_cont:hover {
+    opacity: 1; 
+}
+
+/* 슬라이드 영역 */
+.conts .slide {margin-left: 5px;}
+.conts .slide img {height: 318px;}
+
+/* 로그인 버튼 영역 */
+.user {margin-left: 7px;}
+.user .user_top {
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    padding: 0 17px;
+    height: 120px;
+}
+.user .user_inner {overflow: hidden; margin-top: 22px;}
+.user .user_inner .left {float: left;}
+.user .user_inner .right {float: right;}
+.user .user_inner > p {font-size: 11px; color: #939393;}
+
+.user .login_btn {
+    border: none;
+    background-color: #00D344;
+    color: #fff;
+    font-weight: 800;
+    width: 100%;
+    height: 42px;
+    margin-top: 10px;
+}
+
+.user .user_bottom {margin-top: 8px;}

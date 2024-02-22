@@ -1,0 +1,64 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style: none;}
+img {max-width: 100%; height: auto;}
+
+#header {border-top: 4px solid #00D344;}
+
+header .wrap  {border-bottom: 1px solid #999;}
+header .top {overflow: hidden; width: 1008px; margin: 0 auto;}
+header .top .top_left {float: left; padding: 11px 7px; font-size: 12px;}
+header .top .top_right {float: right;}
+
+.top_right ul li {display: inline; border-left: 1px solid #999;}
+.top_right ul li a {
+    display: inline-block; 
+    padding: 11px 7px; 
+    color: #999; 
+    font-size: 12px; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .mid {overflow: hidden; width: 1008px; margin: 0 auto;}
+header .mid .left {float: left;}
+header .mid .right {float: right; margin: 10px;}
+header .mid fieldset {
+    width: 330px; 
+    height: 40px; 
+    margin: 36px 0 0 11px;
+    border: none;
+    background-image: url('img_melon/melon_search.png');
+    overflow: hidden; /* 플롯의 법칙 */
+}
+header .mid fieldset input {
+    float: left;
+    width: 260px;
+    height: 25px;
+    margin: 7px 0 0 18px;
+    border: none;
+    }
+header .mid fieldset button {
+    float: right;
+    width: 45px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url('img_melon/melon_btn.png');
+}
+
+header .bottom {overflow: hidden; width: 1008px; margin: 0 auto;}
+header .bottom .b_left {float: left;}
+header .bottom .b_right {float: right;}
+
+header .bottom > ul > li {display: inline;}
+header .bottom > ul > li > a {
+    display: inline-block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    width: 75px;
+    height: 40px;
+    text-align: center;
+}
